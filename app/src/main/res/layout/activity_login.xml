@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.activity.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/Theme.DigitalHouseFood"
+        android:background="@color/bluevariant"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tilemail">
+
+        <TextView
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digital House Foods"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:textColorHint="#8492A6"
+        android:layout_marginTop="@dimen/fifty_four_dp"
+        android:layout_marginStart="@dimen/value_twenty_four_dp"
+        android:layout_marginEnd="@dimen/value_twenty_four_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/tilpassword"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bluevariant"
+        android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textColorHint="#8492A6"
+        android:layout_marginTop="@dimen/twelve_dp"
+        android:layout_marginStart="@dimen/value_twenty_four_dp"
+        android:layout_marginEnd="@dimen/value_twenty_four_dp"
+        app:layout_constraintEnd_toEndOf="@id/tilemail"
+        app:layout_constraintStart_toStartOf="@id/tilemail"
+        app:layout_constraintTop_toBottomOf="@id/tilemail">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/bluevariant"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixty_seven_dp"
+        android:layout_marginStart="@dimen/value_twenty_three_dp"
+        android:layout_marginEnd="@dimen/value_twenty_three_dp"
+        app:layout_constraintEnd_toEndOf="@id/tilpassword"
+        app:layout_constraintStart_toStartOf="@id/tilpassword"
+        app:layout_constraintTop_toBottomOf="@id/tilpassword"
+        android:background="#FF5252"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_one_sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/bt_login"
+        app:layout_constraintStart_toStartOf="@id/bt_login"
+        app:layout_constraintTop_toBottomOf="@id/bt_login"
+        android:layout_marginTop="76dp"
+        android:text="@string/or"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="146dp"
+        android:layout_marginStart="@dimen/value_twenty_three_dp"
+        android:layout_marginEnd="@dimen/value_twenty_three_dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_or"
+        app:layout_constraintStart_toStartOf="@id/tv_or"
+        app:layout_constraintTop_toBottomOf="@id/tv_or"
+        android:background="#8492A6"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_one_sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

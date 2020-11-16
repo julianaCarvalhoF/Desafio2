@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="value_twenty_four_dp">24dp</dimen>
+    <dimen name="fifty_four_dp">54dp</dimen>
+    <dimen name="twelve_dp">12dp</dimen>
+    <dimen name="value_twenty_three_dp">23dp</dimen>
+    <dimen name="sixty_seven_dp">67dp</dimen>
+    <dimen name="twenty_one_sp">21sp</dimen>
+</resources>

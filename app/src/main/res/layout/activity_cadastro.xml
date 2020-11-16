@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.activity.RegisterActivity"
+    >
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:theme="@style/Theme.DigitalHouseFood"
+      android:background="@color/bluevariant"
+      android:textColor="@color/white"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/tilname">
+
+    <TextView
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+  </androidx.appcompat.widget.Toolbar>
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tilname"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nome"
+
+      android:textColorHint="#8492A6"
+      android:layout_marginTop="33dp"
+      android:layout_marginBottom="12dp"
+      android:layout_marginStart="@dimen/value_twenty_four_dp"
+      android:layout_marginEnd="@dimen/value_twenty_four_dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolbar"
+      app:layout_constraintBottom_toTopOf="@+id/tilemail"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bluevariant"
+        android:inputType="textEmailAddress"
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tilemail"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="@string/e_mail"
+      android:textColorHint="#8492A6"
+      app:layout_constraintEnd_toEndOf="@id/tilname"
+      app:layout_constraintStart_toStartOf="@id/tilname"
+      app:layout_constraintTop_toBottomOf="@id/tilname"
+      app:layout_constraintBottom_toTopOf="@+id/tilpassword"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bluevariant"
+        android:inputType="textEmailAddress"
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tilpassword"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="@string/password"
+      android:textColorHint="#8492A6"
+      android:layout_marginTop="@dimen/twelve_dp"
+      app:layout_constraintEnd_toEndOf="@id/tilemail"
+      app:layout_constraintStart_toStartOf="@id/tilemail"
+      app:layout_constraintTop_toBottomOf="@id/tilemail"
+      app:layout_constraintBottom_toTopOf="@id/tilRepeatpassword">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/bluevariant"
+        />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tilRepeatpassword"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="@string/Repeat_password"
+      android:textColorHint="#8492A6"
+      android:layout_marginTop="@dimen/twelve_dp"
+      app:layout_constraintEnd_toEndOf="@id/tilpassword"
+      app:layout_constraintStart_toStartOf="@id/tilpassword"
+      app:layout_constraintTop_toBottomOf="@id/tilpassword"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/bluevariant" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/bt_register"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="#FF5252"
+      android:text="@string/register"
+      android:textColor="@color/white"
+      android:textSize="@dimen/twenty_one_sp"
+      android:layout_margin="23dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      >
+
+  </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
